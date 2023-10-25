@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Averia+Sans+Libre&family=Dancing+Script:wght@500&family=Kodchasan:wght@200&family=Laila&family=Nosifer&family=Nunito:wght@300&family=Pacifico&family=Poppins:wght@300&family=Qwitcher+Grypen:wght@700&family=Roboto:wght@300&family=Rochester&family=Sofia&display=swap');
+.NavBar{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(9vh - 40px);
+}
+.NavBar .icon{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.NavBar .sunIcon{
+    color: white;
+}
+.NavBar .logo{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    font-family: Aladin;
+}
+@media screen and (max-width : 600px) {
+    .NavBar{
+        padding: 20px 10px;
+    }
+    .NavBar .logo{
+        font-size: 1.3rem;
+    }
+}

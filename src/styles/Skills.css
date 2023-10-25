@@ -1,0 +1,492 @@
+.Skills{
+    width: 100%;
+    height: 100vh;
+    padding: 50px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Skills .skillsContainer{
+    width: 170px;
+    height: 170px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 2s;
+    z-index: 4;
+    display: flex;
+    border: 5px solid #3101ff;
+}
+.Skills .skillsContainer:hover{
+    width: 220px;
+    height: 220px;
+    background-color: #3101ff;
+}
+.Skills .skillsContainer h1{
+    content: "skills";
+    color: white;
+    z-index: 5;
+    font-size: 2rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50% , -50%);
+    text-transform: capitalize;
+}
+.Skills .skillsContainer .frontend , .Skills .skillsContainer .backend{
+    width: 150px;
+    height: 150px;
+    background-color: #3101ff ;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    opacity: 0;
+}
+.Skills .skillsContainer .frontendAnimation{
+    top: 50%;
+    left: -200px;
+    animation: frontendTranslation 2s;
+    opacity: 100%;
+    transform: translateY(-50%);
+}
+.Skills .skillsContainer .backendAnimation{
+    bottom: 50%;
+    right: -200px;
+    animation: backendTranslation 2s;
+    opacity: 100%;
+    transform: translateY(50%);
+}
+.Skills .skillsContainer .frontend .cercle , .Skills .skillsContainer .backend .cercle{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.Skills .skillsContainer .frontend .cercle .icon , .Skills .skillsContainer .backend .cercle .icon{
+    font-size: 3.5rem;
+}
+.html{
+    top: -100px;
+    left: -100px;
+    animation: htmlTranslation 2s;
+    color: #e34c26;
+}
+.css{
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+    animation: cssTranslation 2s;
+    color: #264de4;
+}
+.js{
+    bottom: -100px;
+    left: -100px;
+    animation: jsTranslation 2s;
+    color: #f0db4f;
+}
+.nodejs{
+    top: -100px;
+    right: -100px;
+    animation: nodejsTranslation 2s;
+    color:  #6cc24a;
+}
+.mongoDb{
+    bottom: -100px;
+    right: -100px;
+    animation: mongoDbTranslation 2s;
+    color: #4DB33D;
+}
+.Skills .skillsContainer .frontend .cercle .cercle2 , .Skills .skillsContainer .backend .cercle .cercle2{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sass{
+    left: -75px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: sassTranslation 2s;
+    color: #c69;
+}
+.express{
+    right: -75px;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: expressTranslation 2s;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 60px;
+    height: 57px;
+}
+.express span{
+    font-size: 2rem;
+    color: white;
+    padding-left: 2px;
+    text-align: center;
+}
+.react {
+    top: -50px;
+    left: -75px;
+    animation: reactTranslation 2s;
+    color: #61dbfb;
+}
+.redux{
+    bottom: -50px;
+    left: -75px;
+    animation: reduxTranslation 2s;
+    color: #764abc;
+}
+
+@keyframes frontendTranslation {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 50%;
+        left: -200px;
+        opacity: 100%;
+    }
+}
+
+@keyframes backendTranslation {
+    0% {
+        right: 0;
+        opacity: 0;
+    }
+    100% {
+        right: -200px;
+        opacity: 100%;
+    }
+}
+@keyframes htmlTranslation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: -100px;
+        left: -100px;
+    }
+}
+
+@keyframes cssTranslation {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -100px;
+    }
+}
+
+@keyframes jsTranslation {
+    0% {
+        bottom: 0;
+        left: 0;
+    }
+    100% {
+        bottom: -100px;
+        left: -100px;
+    }
+}
+
+@keyframes nodejsTranslation {
+    0% {
+        top: 0;
+        right: 0;
+    }
+    100% {
+        top: -100px;
+        right: -100px;
+    }
+}
+
+@keyframes mongoDbTranslation {
+    0% {
+        bottom: 0;
+        right: 0;
+    }
+    100% {
+        bottom: -100px;
+        right: -100px;
+    }
+}
+@keyframes sassTranslation {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -75px;
+    }
+}
+
+@keyframes reactTranslation {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    100% {
+        top: -50px;
+        left: -75px;
+    }
+}
+
+@keyframes reduxTranslation {
+    0% {
+        bottom: 0;
+        left: 0;
+    }
+    100% {
+        bottom: -50px;
+        left: -75px;
+    }
+}
+
+@keyframes expressTranslation {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -75px;
+    }
+}
+@keyframes boxAnim {
+    0% {
+        width: 170px;
+        height: 170px;
+    }
+    100% {
+        width: 220px;
+        height: 220px;
+    }
+}
+@media screen and (max-width : 1000px) {
+    .Skills .skillsContainer{
+        width: 150px;
+        height: 150px;
+    }
+    .Skills .skillsContainer:hover{
+        width: 170px;
+        height: 170px;
+    }
+    .Skills .skillsContainer h1{
+        font-size: 1.5rem;
+    }
+    .Skills .skillsContainer .frontend , .Skills .skillsContainer .backend{
+        width: 110px;
+        height: 110px;
+    }
+    .Skills .skillsContainer .frontendAnimation{
+        top: -170px;
+        left: 50%;
+        transform: none;
+        transform: translateX(-50%);
+    }
+    .Skills .skillsContainer .backendAnimation{
+        bottom: -170px;
+        right: 50%;
+        transform: none;
+        transform: translateX(50%);
+    }
+    .Skills .skillsContainer .frontend .cercle , .Skills .skillsContainer .backend .cercle{
+        width: 50px;
+        height: 50px;
+    }
+    .Skills .skillsContainer .frontend .cercle .icon , .Skills .skillsContainer .backend .cercle .icon{
+        font-size: 3rem;
+    }
+    .css{
+        top: -50px;
+        left: -100px;
+        transform: translate(50% , 50%);
+    }
+    .html{
+        top: 50px;
+        left: -100px;
+        transform: translate(50% , 50%);
+    }
+    .js{
+        top: 0;
+        left: 100px;
+        transform: translate(50% , 50%);
+    }
+    .nodejs{
+        top: 0;
+        left: -100px;
+        transform: translate(50% , 50%);
+    }
+    .mongoDb{
+        top: 0;
+        left: 100px;
+        transform: translate(50% , 50%);
+    }
+    .sass{
+        top: -60px;
+        left: 20px;
+        transform: translateX(50px);
+    }
+    .express{
+        top: 35px;
+        left: -20px;
+        transform: translate(-50% , 50%);
+        width: 47px;
+        height: 47px;
+    }
+    .react {
+        top: -100px;
+        left: 10px;
+        transform: translate(50% , 50%);
+    }
+    .redux{
+        top: 100px;
+        left: 10px;
+        transform: translate(50% , -50%);
+    }
+    
+    @keyframes frontendTranslation {
+        0% {
+            top: 0;
+            opacity: 0;
+        }
+        100% {
+            top: -170px;
+            opacity: 100%;
+        }
+    }
+    
+    @keyframes backendTranslation {
+        0% {
+            bottom: 0;
+            opacity: 0;
+        }
+        100% {
+            bottom: -170px;
+            right: 50%;
+        }
+    }
+    @keyframes htmlTranslation {
+        0% {
+            top: 0;
+            left: 0; 
+        }
+        100% {
+            top: 50px;
+            left: -100px;
+        }
+    }
+    
+    @keyframes cssTranslation {
+        0% {
+            top: 0;
+            left: 0; 
+        }
+        100% {
+            top: -50px;
+            left: -100px;
+        }
+    }
+    
+    @keyframes jsTranslation {
+        0% {
+            top: 0;
+            left: 0; 
+        }
+        100% {
+            top: 0;
+            left: 100px;
+        }
+    }
+    
+    @keyframes nodejsTranslation {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        100% {
+            top: 0;
+            left: -100px;
+        }
+    }
+    
+    @keyframes mongoDbTranslation {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        100% {
+            top: 0;
+            left: 100px;
+        }
+    }
+    @keyframes sassTranslation {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        100% {
+            top: -60px;
+            left: 20px;
+        }
+    }
+    
+    @keyframes reactTranslation {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        100% {
+            top: -100px;
+            left: 10px;
+        }
+    }
+    
+    @keyframes reduxTranslation {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        100% {
+            top: 100px;
+            left: 10px;
+        }
+    }
+    
+    @keyframes expressTranslation {
+        0% {
+            top: 0;
+            left: 0;
+        }
+        100% {
+            top: 35px;
+            left: -20px;
+        }
+    }
+    @keyframes boxAnim {
+        0% {
+            width: 150px;
+            height: 150px;
+        }
+        100% {
+            width: 170px;
+            height: 170px;
+        }
+    }
+}

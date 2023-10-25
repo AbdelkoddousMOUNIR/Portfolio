@@ -1,0 +1,66 @@
+.ProjectCard {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    z-index: 0;
+}
+.ProjectCard:hover:before {
+    opacity: 0.8;
+}
+.ProjectCard:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: #3101ff;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+.ProjectCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+.ProjectCard:hover .info{
+    opacity: 1;
+}
+.ProjectCard .info {
+    width: 100%;
+    position: relative;
+    z-index: 999;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0;
+}
+.ProjectCard .info h1{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.ProjectCard .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+@media screen and (max-width : 300px) {
+    .ProjectCard {
+        width: 80%;
+    }
+}
