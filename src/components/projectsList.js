@@ -4,6 +4,7 @@ import restaurant from '../imgs/restaurant.jpg'
 import multiply from '../imgs/multiply.jpg'
 import randomColorPalette from '../imgs/randomColorPalette.jpg'
 import rockPaperScissor from '../imgs/rockPaperScissor.jpg'
+import DoItImg from '../imgs/DoItImg.jpg'
 
 export const projects = [
     {
@@ -12,6 +13,13 @@ export const projects = [
         projectInfos : "A store that contains different product categories.",
         projectLink: 'https://abdoshop.netlify.app',
         usedTechnologie : 'react'
+    },
+    {
+        projectName: 'DoIt',
+        projectImg : DoItImg,
+        projectInfos : "A todo list with authentification and authorization.",
+        projectLink: 'https://doitproject.netlify.app',
+        usedTechnologie : 'mern stack'
     },
     {
         projectName: 'restaurant',
