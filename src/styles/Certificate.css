@@ -1,0 +1,33 @@
+.Certificate{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.Certificate h1{
+    text-transform: capitalize;
+}
+.Certificate .container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+}
+.Certificate .container a {
+    text-decoration: none;
+    height: 300px;
+    width: 200px;
+    background-color: aqua;
+}
+.Certificate .container a img{
+    height: 100%;
+    width: 100%;
+}

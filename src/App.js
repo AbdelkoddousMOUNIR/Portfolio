@@ -6,6 +6,8 @@ import About from './components/About';
 import { BrowserRouter } from 'react-router-dom';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Certificate from './components/Certificate';
+
 
 function App() {
   let { mode } = useContext(appContext);
@@ -15,6 +17,7 @@ function App() {
         <NavBar />
         <About />
         <Skills />
+        <Certificate />
         <Projects />
       </div>
     </BrowserRouter>
